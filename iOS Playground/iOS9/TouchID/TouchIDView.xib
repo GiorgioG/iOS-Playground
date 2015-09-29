@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B17c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="g6Q-0E-GAs">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kC6-Zs-Sl8">
+                    <rect key="frame" x="300" y="240" width="0.0" height="86"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="uIh-YY-hc5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UP5-wp-Fh0">
+                    <rect key="frame" x="264.5" y="222" width="71" height="20.5"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20.5" id="blf-dC-PEp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1E-nD-D6E">
+                    <rect key="frame" x="236" y="80" width="128" height="128"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="128" id="Wgn-bP-OnE"/>
+                        <constraint firstAttribute="height" constant="128" id="hQl-dc-hce"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="TouchID_ButtonImage"/>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UP5-wp-Fh0" firstAttribute="top" secondItem="X1E-nD-D6E" secondAttribute="bottom" constant="14" id="6RD-VO-tMR"/>
+                <constraint firstItem="kC6-Zs-Sl8" firstAttribute="centerX" secondItem="g6Q-0E-GAs" secondAttribute="centerX" id="7Tu-rh-CW7"/>
+                <constraint firstItem="X1E-nD-D6E" firstAttribute="top" secondItem="g6Q-0E-GAs" secondAttribute="top" constant="80" id="L2I-Cb-hiK"/>
+                <constraint firstItem="UP5-wp-Fh0" firstAttribute="centerX" secondItem="g6Q-0E-GAs" secondAttribute="centerX" id="LHs-N5-4Vh"/>
+                <constraint firstAttribute="bottom" secondItem="X1E-nD-D6E" secondAttribute="bottom" constant="314" id="lQ0-p5-oZ8"/>
+                <constraint firstItem="X1E-nD-D6E" firstAttribute="centerX" secondItem="g6Q-0E-GAs" secondAttribute="centerX" id="nkm-il-my0"/>
+                <constraint firstItem="kC6-Zs-Sl8" firstAttribute="top" secondItem="X1E-nD-D6E" secondAttribute="bottom" constant="32" id="pXz-aq-YeM"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="lQ0-p5-oZ8"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="TouchID_ButtonImage" width="405" height="405"/>
+    </resources>
+</document>
