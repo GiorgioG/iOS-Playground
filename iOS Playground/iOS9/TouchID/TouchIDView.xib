@@ -4,7 +4,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TouchIDViewController" customModule="iOS_Playground" customModuleProvider="target">
+            <connections>
+                <outlet property="touchIDButton" destination="X1E-nD-D6E" id="y9l-g3-agv"/>
+                <outlet property="touchIDResultLabel" destination="kC6-Zs-Sl8" id="uUH-Qb-ft9"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="g6Q-0E-GAs">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -59,6 +64,6 @@
         </view>
     </objects>
     <resources>
-        <image name="TouchID_ButtonImage" width="405" height="405"/>
+        <image name="TouchID_ButtonImage" width="512" height="512"/>
     </resources>
 </document>

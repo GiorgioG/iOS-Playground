@@ -9,15 +9,13 @@
 import Foundation
 import UIKit
 
-class ModalDialogViewController : UIViewController {
+class ModalDialogViewController : XibViewController {
     var presentingView : UIView?
     var button : UIButton?
     override func loadView() {
-        let nib = UINib(nibName: "ModalDialogView", bundle: NSBundle.mainBundle())
-        self.view = nib.instantiateWithOwner(nil, options: nil)[0] as? UIView
+        super.loadView()
         button = self.view.viewWithTag(1) as? UIButton
         button?.addTarget(self, action: NSSelectorFromString("close"), forControlEvents: UIControlEvents.TouchUpInside)
-        self.edgesForExtendedLayout = UIRectEdge.None
 
     }
     
@@ -30,6 +28,12 @@ class ModalDialogViewController : UIViewController {
         }
         
         self.dismissViewControllerAnimated(true, completion: nil)
-
     }
+    
+    
+    
+    override func getXibName() -> String {
+        return "ModalDialogView"
+    }
+
 }

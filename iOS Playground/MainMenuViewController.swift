@@ -12,10 +12,14 @@ class MainMenuViewController: UITableViewController{
     
     let playgroundItems : [PlaygroundItem] = [
         PlaygroundItem(name: "Touch ID", sortIndex: 0, iconAssetName: "TouchID",caption: "Last modified: 9/25/2015", viewControllerClass:TouchIDViewController.self, isEnabledCheck: {
-            let isEnabled = SystemUtils.getOSVersion().isEqualToOrGreaterThan(OSVersion(major:8, minor:0))
+            let isEnabled = SystemUtils.getOSVersion().isEqualToOrGreaterThan(OSVersion(major:8, minor:0)) && SystemUtils.isTouchIDAvailable()
             return isEnabled
         }),
-        PlaygroundItem(name: "Animated Modal Overlay", sortIndex: 0, iconAssetName: "AnimatedModalOverlay",caption: "Last modified: 9/28/2015", viewControllerClass:AnimatedModalOverlayViewController.self, isEnabledCheck: nil)
+        PlaygroundItem(name: "Animated Modal Overlay", sortIndex: 0, iconAssetName: "AnimatedModalDialog",caption: "Last modified: 9/28/2015", viewControllerClass:AnimatedModalOverlayViewController.self, isEnabledCheck: nil),
+        PlaygroundItem(name: "3D Touch", sortIndex: 0, iconAssetName: "3DTouch",caption: "Last modified: 9/29/2015", viewControllerClass:ThreeDTouchViewController.self, isEnabledCheck: {
+            let isEnabled = SystemUtils.getOSVersion().isEqualToOrGreaterThan(OSVersion(major:9, minor:0)) && SystemUtils.is3DTouchAvailable()
+            return isEnabled
+        }),
     ]
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
@@ -48,6 +52,10 @@ class MainMenuViewController: UITableViewController{
         return self.playgroundItems.count
     }
     
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 64
+    }
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let item = self.playgroundItems[indexPath.row] as PlaygroundItem
         let controllerType = item.viewControllerClass  as! UIViewController.Type
@@ -64,9 +72,13 @@ class MainMenuViewController: UITableViewController{
         
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         cell.separatorInset = UIEdgeInsetsMake(0, 0, 0, cell.bounds.size.width);
+        cell.imageView?.contentMode = UIViewContentMode.ScaleToFill
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         if let iconAssetName = item.iconAssetName {
-            cell.imageView?.image = UIImage(named: iconAssetName)
+            
+            let image = UIImage(named: iconAssetName)
+            let dimension = CGFloat(12)
+            cell.imageView?.image = ImageUtils.ResizeImage(image, targetSize:CGSizeMake(dimension*UIScreen.mainScreen().scale, dimension*UIScreen.mainScreen().scale))
         }
         
         if let caption = item.caption {

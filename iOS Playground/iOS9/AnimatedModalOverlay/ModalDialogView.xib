@@ -30,7 +30,7 @@
                 </constraints>
             </view>
             <animations/>
-            <blurEffect style="light"/>
+            <blurEffect style="dark"/>
             <point key="canvasLocation" x="753.5" y="348.5"/>
         </visualEffectView>
     </objects>
