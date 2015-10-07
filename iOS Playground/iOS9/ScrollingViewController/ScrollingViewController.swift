@@ -24,6 +24,7 @@ class ScrollingViewController : XibViewController, UIScrollViewDelegate {
     
     deinit {
         stopObservingKeyboardEvents()
+        dismissKeyboardGestureRecognizer = nil
     }
     
     func dismissKeyboard() {

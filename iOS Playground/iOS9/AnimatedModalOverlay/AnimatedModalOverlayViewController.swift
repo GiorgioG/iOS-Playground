@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class AnimatedModalOverlayViewController : XibViewController {
-    weak var rightButton : UIBarButtonItem?
+    var rightButton : UIBarButtonItem?
     
     override func getXibName() -> String { return "AnimatedModalOverlayView" }
     
