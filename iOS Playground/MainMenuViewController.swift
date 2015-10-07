@@ -21,7 +21,7 @@ class MainMenuViewController: UITableViewController{
             return isEnabled
         }),
         PlaygroundItem(name: "ScrollView", searchKeywords:["UIScrollView", "Scrolling", "iOS SDK", "UIKit"], sortIndex: 0, iconAssetName: "ScrollView", caption: "Last modified: 10/06/2015", viewControllerClass:ScrollingViewController.self, isEnabledCheck: nil),
-
+        
     ]
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
@@ -60,8 +60,10 @@ class MainMenuViewController: UITableViewController{
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let item = self.playgroundItems[indexPath.row] as PlaygroundItem
-        item.userActivity.becomeCurrent()
-
+        
+        if let userActivity = item.userActivity {
+            userActivity.becomeCurrent()
+        }
         let controllerType = item.viewControllerClass  as! UIViewController.Type
         let controller = controllerType.init(nibName:nil, bundle:nil)
         self.navigationController?.pushViewController(controller, animated: true)
