@@ -8,25 +8,45 @@
 
 import Foundation
 import UIKit
+import CoreSpotlight
 
 class PlaygroundItem {
-    init(name: String, sortIndex: Int, iconAssetName:String?, caption:String?, viewControllerClass: AnyClass, isEnabledCheck:(() -> Bool)?) {
+    init(name: String, searchKeywords: [String]?, sortIndex: Int, iconAssetName:String?, caption:String?, viewControllerClass: AnyClass, isEnabledCheck:(() -> Bool)?) {
         self.name = name
         self.sortIndex = sortIndex
         
         if let validIconAssetName = iconAssetName{
             self.iconAssetName = "ItemIcon_" + validIconAssetName
+        } else {
+            self.iconAssetName = nil
         }
+        
         
         self.caption = caption
         self.isEnabledCheck = isEnabledCheck
         self.viewControllerClass = viewControllerClass
+        
+        userActivity = NSUserActivity(activityType: NSBundle.mainBundle().bundleIdentifier!+".Example")
+        userActivity.title = name + " Sample"
+        userActivity.userInfo = ["id:":name]
+        userActivity.eligibleForSearch = true
+        
+        if let validIconAssetName = self.iconAssetName {
+            let attributes = CSSearchableItemAttributeSet(itemContentType: "iOSPlaygroundItemType")
+            attributes.thumbnailData = UIImageJPEGRepresentation(UIImage(named: validIconAssetName)!,1)
+            userActivity.contentAttributeSet = attributes
+        }
+        
+        if let keywords = searchKeywords {
+            userActivity.keywords = Set(keywords)
+        }
     }
     
-    var name : String
-    var sortIndex : Int
-    var viewControllerClass: AnyClass
-    var iconAssetName:String?
-    var caption:String?
-    var isEnabledCheck: (() -> Bool)?
+    let name : String
+    let sortIndex : Int
+    let viewControllerClass: AnyClass
+    let iconAssetName:String?
+    let caption:String?
+    let isEnabledCheck: (() -> Bool)?
+    let userActivity : NSUserActivity
 }
