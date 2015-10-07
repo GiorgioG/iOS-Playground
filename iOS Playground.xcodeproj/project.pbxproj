@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74213FF31BC4679200680D1B /* ScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213FF21BC4679200680D1B /* ScrollingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		74213FF61BC46AEB00680D1B /* ScrollingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74213FF51BC46AEB00680D1B /* ScrollingView.xib */; settings = {ASSET_TAGS = (); }; };
 		7441F2F11BB57C4E00E95D95 /* SystemUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7441F2F01BB57C4E00E95D95 /* SystemUtils.swift */; settings = {ASSET_TAGS = (); }; };
 		7441F2FC1BB9DB4400E95D95 /* AnimatedModalOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7441F2FB1BB9DB4400E95D95 /* AnimatedModalOverlayViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		7441F2FF1BB9DCCE00E95D95 /* AnimatedModalOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7441F2FE1BB9DCCE00E95D95 /* AnimatedModalOverlayView.xib */; settings = {ASSET_TAGS = (); }; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74213FF21BC4679200680D1B /* ScrollingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollingViewController.swift; path = iOS9/ScrollingViewController/ScrollingViewController.swift; sourceTree = "<group>"; };
+		74213FF51BC46AEB00680D1B /* ScrollingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScrollingView.xib; path = iOS9/ScrollingViewController/ScrollingView.xib; sourceTree = "<group>"; };
 		7441F2F01BB57C4E00E95D95 /* SystemUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemUtils.swift; path = Utils/SystemUtils.swift; sourceTree = "<group>"; };
 		7441F2FB1BB9DB4400E95D95 /* AnimatedModalOverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatedModalOverlayViewController.swift; path = iOS9/AnimatedModalOverlay/AnimatedModalOverlayViewController.swift; sourceTree = "<group>"; };
 		7441F2FE1BB9DCCE00E95D95 /* AnimatedModalOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AnimatedModalOverlayView.xib; path = iOS9/AnimatedModalOverlay/AnimatedModalOverlayView.xib; sourceTree = "<group>"; };
@@ -62,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74213FF41BC469F700680D1B /* ScrollingView */ = {
+			isa = PBXGroup;
+			children = (
+				74213FF21BC4679200680D1B /* ScrollingViewController.swift */,
+				74213FF51BC46AEB00680D1B /* ScrollingView.xib */,
+			);
+			name = ScrollingView;
+			sourceTree = "<group>";
+		};
 		7441F2EF1BB57C1F00E95D95 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +124,7 @@
 				74A0AD661BB40AD400E10B35 /* LaunchScreen.storyboard */,
 				74A0AD691BB40AD400E10B35 /* Info.plist */,
 				74A0AD6F1BB4403C00E10B35 /* PlaygroundItem.swift */,
+				74F1FF851BBB74E20018945A /* Common */,
 			);
 			path = "iOS Playground";
 			sourceTree = "<group>";
@@ -121,7 +135,7 @@
 				74A0AD721BB4E18200E10B35 /* TouchID */,
 				7441F2FD1BB9DC8400E95D95 /* AnimatedModalOverlay */,
 				74F1FF801BBB25560018945A /* 3D Touch */,
-				74F1FF851BBB74E20018945A /* Common */,
+				74213FF41BC469F700680D1B /* ScrollingView */,
 			);
 			name = iOS9;
 			sourceTree = "<group>";
@@ -220,6 +234,7 @@
 			files = (
 				74F1FF821BBB409A0018945A /* ThreeDTouchView.xib in Resources */,
 				74A0AD681BB40AD400E10B35 /* LaunchScreen.storyboard in Resources */,
+				74213FF61BC46AEB00680D1B /* ScrollingView.xib in Resources */,
 				74A0AD651BB40AD400E10B35 /* Assets.xcassets in Resources */,
 				7441F3011BB9E11F00E95D95 /* ModalDialogView.xib in Resources */,
 				74A0AD631BB40AD400E10B35 /* Main.storyboard in Resources */,
@@ -242,6 +257,7 @@
 				7441F2FC1BB9DB4400E95D95 /* AnimatedModalOverlayViewController.swift in Sources */,
 				74A0AD601BB40AD400E10B35 /* MainMenuViewController.swift in Sources */,
 				7441F2F11BB57C4E00E95D95 /* SystemUtils.swift in Sources */,
+				74213FF31BC4679200680D1B /* ScrollingViewController.swift in Sources */,
 				74A0AD5E1BB40AD400E10B35 /* AppDelegate.swift in Sources */,
 				74F1FF7F1BBB204E0018945A /* ThreeDTouchViewController.swift in Sources */,
 				74F1FF7D1BBAB8820018945A /* ImageUtils.swift in Sources */,

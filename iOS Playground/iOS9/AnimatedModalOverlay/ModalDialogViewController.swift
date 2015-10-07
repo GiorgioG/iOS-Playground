@@ -10,13 +10,15 @@ import Foundation
 import UIKit
 
 class ModalDialogViewController : XibViewController {
-    var presentingView : UIView?
-    var button : UIButton?
+    weak var presentingView : UIView?
+    weak var button : UIButton?
+    
+    override func getXibName() -> String { return "ModalDialogView" }
+    
     override func loadView() {
         super.loadView()
         button = self.view.viewWithTag(1) as? UIButton
         button?.addTarget(self, action: NSSelectorFromString("close"), forControlEvents: UIControlEvents.TouchUpInside)
-
     }
     
     func close() {
@@ -32,8 +34,5 @@ class ModalDialogViewController : XibViewController {
     
     
     
-    override func getXibName() -> String {
-        return "ModalDialogView"
-    }
-
+    
 }

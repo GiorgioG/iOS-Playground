@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 
 class AnimatedModalOverlayViewController : XibViewController {
-    var rightButton : UIBarButtonItem?
+    weak var rightButton : UIBarButtonItem?
+    
+    override func getXibName() -> String { return "AnimatedModalOverlayView" }
     
     override func loadView() {
         super.loadView()
@@ -32,10 +34,6 @@ class AnimatedModalOverlayViewController : XibViewController {
         view.transform = CGAffineTransformScale(view.transform, 0.95, 0.95);
         UIView.commitAnimations()
         
-    }
-    
-    override func getXibName() -> String {
-        return "AnimatedModalOverlayView"
     }
     
 }

@@ -49,7 +49,7 @@ class SystemUtils {
     }
     
     static func log(logMessage:String) {
-        NSLog(logMessage)
+        print(logMessage)
     }
     
     

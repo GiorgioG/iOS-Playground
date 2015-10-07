@@ -11,10 +11,11 @@ import UIKit
 
 class ThreeDTouchViewController : XibViewController {
     
-    @IBOutlet var peekImageView : UIImageView?
-    @IBOutlet var forceImageView : UIImageView?
-    @IBOutlet var forceLabel : UILabel?
+    @IBOutlet weak var peekImageView : UIImageView?
+    @IBOutlet weak var forceImageView : UIImageView?
+    @IBOutlet weak var forceLabel : UILabel?
     
+    override func getXibName() -> String { return "ThreeDTouchView" }
     
     //TODO: Demo Peek & Pop
     
@@ -30,9 +31,5 @@ class ThreeDTouchViewController : XibViewController {
     }
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         forceLabel!.text = ""
-    }
-    
-    override func getXibName() -> String {
-        return "ThreeDTouchView"
     }
 }

@@ -20,6 +20,8 @@ class MainMenuViewController: UITableViewController{
             let isEnabled = SystemUtils.getOSVersion().isEqualToOrGreaterThan(OSVersion(major:9, minor:0)) && SystemUtils.is3DTouchAvailable()
             return isEnabled
         }),
+        PlaygroundItem(name: "ScrollView", sortIndex: 0, iconAssetName: "ScrollView",caption: "Last modified: 10/06/2015", viewControllerClass:ScrollingViewController.self, isEnabledCheck: nil),
+
     ]
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {

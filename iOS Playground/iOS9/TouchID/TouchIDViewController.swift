@@ -15,9 +15,7 @@ class TouchIDViewController : XibViewController {
     @IBOutlet var touchIDButton : UIButton?
     @IBOutlet var touchIDResultLabel : UILabel?
     
-    override func getXibName() -> String {
-        return "TouchIDView"
-    }
+    override func getXibName() -> String { return "TouchIDView" }
     
     override func loadView() {
         super.loadView()

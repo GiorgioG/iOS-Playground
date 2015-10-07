@@ -11,13 +11,12 @@ import UIKit
 
 class XibViewController : UIViewController {
     
+    func getXibName() -> String { return "getXibName method must be overriden by subclass" }
+    
     override func loadView() {
-            let nib = UINib(nibName: getXibName(), bundle: NSBundle.mainBundle())
-            self.view = nib.instantiateWithOwner(self, options: nil)[0] as? UIView
-            self.edgesForExtendedLayout = UIRectEdge.None
+        let nib = UINib(nibName: getXibName(), bundle: NSBundle.mainBundle())
+        self.view = nib.instantiateWithOwner(self, options: nil)[0] as? UIView
+        self.edgesForExtendedLayout = UIRectEdge.None
     }
     
-    func getXibName() -> String {
-        return "getXibName method must be overriden by subclass"
-    }
 }
