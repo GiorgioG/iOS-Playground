@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ThreeDTouchViewController : XibViewController {
+class ThreeDTouchViewController : XibViewController, UIViewControllerPreviewingDelegate {
     
     @IBOutlet weak var peekImageView : UIImageView?
     @IBOutlet weak var forceImageView : UIImageView?
@@ -17,7 +17,24 @@ class ThreeDTouchViewController : XibViewController {
     
     override func getXibName() -> String { return "ThreeDTouchView" }
     
-    //TODO: Demo Peek & Pop
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.registerForPreviewingWithDelegate(self, sourceView: view)
+    }
+    
+    func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
+        showViewController(viewControllerToCommit, sender: self)
+    }
+    
+    func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        if(CGRectContainsPoint((self.peekImageView?.frame)!, location))   {
+            let vc = PeekViewController()
+            vc.preferredContentSize = CGSizeMake(self.view.frame.size.width, 240)
+            previewingContext.sourceRect = peekImageView!.frame
+            return vc
+        }
+        return nil
+    }
     
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
@@ -29,6 +46,7 @@ class ThreeDTouchViewController : XibViewController {
             }
         }
     }
+    
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         forceLabel!.text = ""
     }

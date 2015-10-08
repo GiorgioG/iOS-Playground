@@ -22,7 +22,6 @@ class AnimatedModalOverlayViewController : XibViewController {
     }
     
     func showDialog(){
-        
         let modalViewController = ModalDialogViewController()
         // I don't like this, but I can't figure out how to get at this view from the dialog...
         modalViewController.presentingView = self.view
@@ -33,7 +32,6 @@ class AnimatedModalOverlayViewController : XibViewController {
         UIView.beginAnimations(nil, context: nil)
         view.transform = CGAffineTransformScale(view.transform, 0.95, 0.95);
         UIView.commitAnimations()
-        
     }
     
 }

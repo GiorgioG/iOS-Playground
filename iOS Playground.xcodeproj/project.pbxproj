@@ -14,6 +14,8 @@
 		7441F2FF1BB9DCCE00E95D95 /* AnimatedModalOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7441F2FE1BB9DCCE00E95D95 /* AnimatedModalOverlayView.xib */; settings = {ASSET_TAGS = (); }; };
 		7441F3011BB9E11F00E95D95 /* ModalDialogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7441F3001BB9E11F00E95D95 /* ModalDialogView.xib */; settings = {ASSET_TAGS = (); }; };
 		7441F3031BB9E36700E95D95 /* ModalDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7441F3021BB9E36700E95D95 /* ModalDialogViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7493C90E1BC61568006222EE /* PeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493C90D1BC61568006222EE /* PeekViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7493C9101BC6159F006222EE /* PeekView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7493C90F1BC6159F006222EE /* PeekView.xib */; settings = {ASSET_TAGS = (); }; };
 		74A0AD5E1BB40AD400E10B35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0AD5D1BB40AD400E10B35 /* AppDelegate.swift */; };
 		74A0AD601BB40AD400E10B35 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0AD5F1BB40AD400E10B35 /* MainMenuViewController.swift */; };
 		74A0AD631BB40AD400E10B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A0AD611BB40AD400E10B35 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 		7441F2FE1BB9DCCE00E95D95 /* AnimatedModalOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AnimatedModalOverlayView.xib; path = iOS9/AnimatedModalOverlay/AnimatedModalOverlayView.xib; sourceTree = "<group>"; };
 		7441F3001BB9E11F00E95D95 /* ModalDialogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ModalDialogView.xib; path = iOS9/AnimatedModalOverlay/ModalDialogView.xib; sourceTree = "<group>"; };
 		7441F3021BB9E36700E95D95 /* ModalDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalDialogViewController.swift; path = iOS9/AnimatedModalOverlay/ModalDialogViewController.swift; sourceTree = "<group>"; };
+		7493C90D1BC61568006222EE /* PeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeekViewController.swift; path = iOS9/ThreeDTouch/PeekViewController.swift; sourceTree = "<group>"; };
+		7493C90F1BC6159F006222EE /* PeekView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PeekView.xib; path = iOS9/ThreeDTouch/PeekView.xib; sourceTree = "<group>"; };
 		74A0AD5A1BB40AD400E10B35 /* iOS Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A0AD5D1BB40AD400E10B35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74A0AD5F1BB40AD400E10B35 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 			children = (
 				74F1FF7E1BBB204E0018945A /* ThreeDTouchViewController.swift */,
 				74F1FF811BBB409A0018945A /* ThreeDTouchView.xib */,
+				7493C90D1BC61568006222EE /* PeekViewController.swift */,
+				7493C90F1BC6159F006222EE /* PeekView.xib */,
 			);
 			name = "3D Touch";
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 				74A0AD631BB40AD400E10B35 /* Main.storyboard in Resources */,
 				7441F2FF1BB9DCCE00E95D95 /* AnimatedModalOverlayView.xib in Resources */,
 				74A10A581BB4E4F0002E1BE4 /* TouchIDView.xib in Resources */,
+				7493C9101BC6159F006222EE /* PeekView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +268,7 @@
 				74A0AD5E1BB40AD400E10B35 /* AppDelegate.swift in Sources */,
 				74F1FF7F1BBB204E0018945A /* ThreeDTouchViewController.swift in Sources */,
 				74F1FF7D1BBAB8820018945A /* ImageUtils.swift in Sources */,
+				7493C90E1BC61568006222EE /* PeekViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
