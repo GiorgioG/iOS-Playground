@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-class ScrollingViewController : XibViewController, UIScrollViewDelegate {
-    @IBOutlet weak var scrollview : UIScrollView?
-    var dismissKeyboardGestureRecognizer : UITapGestureRecognizer?
-    
+class ScrollingViewController: XibViewController, UIScrollViewDelegate {
+    @IBOutlet weak var scrollview: UIScrollView?
+    var dismissKeyboardGestureRecognizer: UITapGestureRecognizer?
+
     override func getXibName() -> String { return "ScrollingView" }
 
     override func viewDidLoad() {
@@ -21,16 +21,16 @@ class ScrollingViewController : XibViewController, UIScrollViewDelegate {
         dismissKeyboardGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         scrollview?.addGestureRecognizer(dismissKeyboardGestureRecognizer!)
     }
-    
+
     deinit {
         stopObservingKeyboardEvents()
         dismissKeyboardGestureRecognizer = nil
     }
-    
+
     func dismissKeyboard() {
         view.endEditing(true)
     }
-    
+
     private func startObservingKeyboardEvents() {
         NSNotificationCenter.defaultCenter().addObserver(self,
             selector:Selector("keyboardWillShow:"),
@@ -41,12 +41,12 @@ class ScrollingViewController : XibViewController, UIScrollViewDelegate {
             name:UIKeyboardWillHideNotification,
             object:nil)
     }
-    
+
     private func stopObservingKeyboardEvents() {
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
     }
-    
+
     func keyboardWillShow(notification: NSNotification) {
         if let userInfo = notification.userInfo {
             if let keyboardSize: CGSize = userInfo[UIKeyboardFrameEndUserInfoKey]?.CGRectValue.size {
@@ -57,9 +57,7 @@ class ScrollingViewController : XibViewController, UIScrollViewDelegate {
         }
     }
     
-    
     func keyboardWillHide(notification: NSNotification) {
         scrollview?.contentInset = UIEdgeInsetsZero;
     }
-    
 }

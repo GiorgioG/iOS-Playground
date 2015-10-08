@@ -189,6 +189,7 @@
 			buildPhases = (
 				74A0AD561BB40AD400E10B35 /* Sources */,
 				74A0AD571BB40AD400E10B35 /* Frameworks */,
+				7493C9111BC6EABB006222EE /* Swift Lint */,
 				74A0AD581BB40AD400E10B35 /* Resources */,
 			);
 			buildRules = (
@@ -251,6 +252,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7493C9111BC6EABB006222EE /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /usr/local/bin/swiftlint;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74A0AD561BB40AD400E10B35 /* Sources */ = {
