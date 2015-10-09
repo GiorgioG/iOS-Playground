@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import LocalAuthentication
+import GSFramework
 
 class TouchIDViewController: XibViewController {
 
@@ -24,7 +25,7 @@ class TouchIDViewController: XibViewController {
         if let touchIDButton = self.touchIDButton {
             touchIDButton.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
         } else {
-            SystemUtils.CrashWithLogMessage("Something very bad happened.")
+            OS.crashApplication("Something very bad happened.")
         }
 
     }
@@ -46,7 +47,7 @@ class TouchIDViewController: XibViewController {
                     else {
                         self.touchIDResultLabel!.textColor = UIColor.redColor()
                         if let policyError = evalPolicyError {
-                            SystemUtils.log(policyError.localizedDescription)
+                            Logger.log(policyError.localizedDescription)
 
                             switch policyError.code {
 

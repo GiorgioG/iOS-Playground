@@ -56,7 +56,7 @@ class ScrollingViewController: XibViewController, UIScrollViewDelegate {
             }
         }
     }
-    
+
     func keyboardWillHide(notification: NSNotification) {
         scrollview?.contentInset = UIEdgeInsetsZero;
     }

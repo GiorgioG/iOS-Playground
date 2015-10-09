@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		74213FF31BC4679200680D1B /* ScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213FF21BC4679200680D1B /* ScrollingViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		74213FF61BC46AEB00680D1B /* ScrollingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74213FF51BC46AEB00680D1B /* ScrollingView.xib */; settings = {ASSET_TAGS = (); }; };
-		7441F2F11BB57C4E00E95D95 /* SystemUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7441F2F01BB57C4E00E95D95 /* SystemUtils.swift */; settings = {ASSET_TAGS = (); }; };
 		7441F2FC1BB9DB4400E95D95 /* AnimatedModalOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7441F2FB1BB9DB4400E95D95 /* AnimatedModalOverlayViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		7441F2FF1BB9DCCE00E95D95 /* AnimatedModalOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7441F2FE1BB9DCCE00E95D95 /* AnimatedModalOverlayView.xib */; settings = {ASSET_TAGS = (); }; };
 		7441F3011BB9E11F00E95D95 /* ModalDialogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7441F3001BB9E11F00E95D95 /* ModalDialogView.xib */; settings = {ASSET_TAGS = (); }; };
 		7441F3031BB9E36700E95D95 /* ModalDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7441F3021BB9E36700E95D95 /* ModalDialogViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		7493C90E1BC61568006222EE /* PeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493C90D1BC61568006222EE /* PeekViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		7493C9101BC6159F006222EE /* PeekView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7493C90F1BC6159F006222EE /* PeekView.xib */; settings = {ASSET_TAGS = (); }; };
+		7493C9381BC82F53006222EE /* GSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7493C9371BC82F53006222EE /* GSFramework.framework */; settings = {ASSET_TAGS = (); }; };
 		74A0AD5E1BB40AD400E10B35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0AD5D1BB40AD400E10B35 /* AppDelegate.swift */; };
 		74A0AD601BB40AD400E10B35 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0AD5F1BB40AD400E10B35 /* MainMenuViewController.swift */; };
 		74A0AD631BB40AD400E10B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A0AD611BB40AD400E10B35 /* Main.storyboard */; };
@@ -25,7 +25,6 @@
 		74A0AD741BB4E1D100E10B35 /* TouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0AD731BB4E1D100E10B35 /* TouchIDViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		74A10A581BB4E4F0002E1BE4 /* TouchIDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74A10A571BB4E4F0002E1BE4 /* TouchIDView.xib */; settings = {ASSET_TAGS = (); }; };
 		74A10A5A1BB4F2B3002E1BE4 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A10A591BB4F2B3002E1BE4 /* LocalAuthentication.framework */; };
-		74F1FF7D1BBAB8820018945A /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F1FF7C1BBAB8820018945A /* ImageUtils.swift */; settings = {ASSET_TAGS = (); }; };
 		74F1FF7F1BBB204E0018945A /* ThreeDTouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F1FF7E1BBB204E0018945A /* ThreeDTouchViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		74F1FF821BBB409A0018945A /* ThreeDTouchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74F1FF811BBB409A0018945A /* ThreeDTouchView.xib */; settings = {ASSET_TAGS = (); }; };
 		74F1FF841BBB74DC0018945A /* XibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F1FF831BBB74DC0018945A /* XibViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -34,13 +33,13 @@
 /* Begin PBXFileReference section */
 		74213FF21BC4679200680D1B /* ScrollingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollingViewController.swift; path = iOS9/ScrollingViewController/ScrollingViewController.swift; sourceTree = "<group>"; };
 		74213FF51BC46AEB00680D1B /* ScrollingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScrollingView.xib; path = iOS9/ScrollingViewController/ScrollingView.xib; sourceTree = "<group>"; };
-		7441F2F01BB57C4E00E95D95 /* SystemUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemUtils.swift; path = Utils/SystemUtils.swift; sourceTree = "<group>"; };
 		7441F2FB1BB9DB4400E95D95 /* AnimatedModalOverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatedModalOverlayViewController.swift; path = iOS9/AnimatedModalOverlay/AnimatedModalOverlayViewController.swift; sourceTree = "<group>"; };
 		7441F2FE1BB9DCCE00E95D95 /* AnimatedModalOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AnimatedModalOverlayView.xib; path = iOS9/AnimatedModalOverlay/AnimatedModalOverlayView.xib; sourceTree = "<group>"; };
 		7441F3001BB9E11F00E95D95 /* ModalDialogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ModalDialogView.xib; path = iOS9/AnimatedModalOverlay/ModalDialogView.xib; sourceTree = "<group>"; };
 		7441F3021BB9E36700E95D95 /* ModalDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalDialogViewController.swift; path = iOS9/AnimatedModalOverlay/ModalDialogViewController.swift; sourceTree = "<group>"; };
 		7493C90D1BC61568006222EE /* PeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeekViewController.swift; path = iOS9/ThreeDTouch/PeekViewController.swift; sourceTree = "<group>"; };
 		7493C90F1BC6159F006222EE /* PeekView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PeekView.xib; path = iOS9/ThreeDTouch/PeekView.xib; sourceTree = "<group>"; };
+		7493C9371BC82F53006222EE /* GSFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GSFramework.framework; path = Carthage/Build/iOS/GSFramework.framework; sourceTree = "<group>"; };
 		74A0AD5A1BB40AD400E10B35 /* iOS Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A0AD5D1BB40AD400E10B35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74A0AD5F1BB40AD400E10B35 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +51,6 @@
 		74A0AD731BB4E1D100E10B35 /* TouchIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TouchIDViewController.swift; path = iOS9/TouchID/TouchIDViewController.swift; sourceTree = "<group>"; };
 		74A10A571BB4E4F0002E1BE4 /* TouchIDView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TouchIDView.xib; path = iOS9/TouchID/TouchIDView.xib; sourceTree = "<group>"; };
 		74A10A591BB4F2B3002E1BE4 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
-		74F1FF7C1BBAB8820018945A /* ImageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageUtils.swift; path = Utils/ImageUtils.swift; sourceTree = "<group>"; };
 		74F1FF7E1BBB204E0018945A /* ThreeDTouchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThreeDTouchViewController.swift; path = iOS9/ThreeDTouch/ThreeDTouchViewController.swift; sourceTree = "<group>"; };
 		74F1FF811BBB409A0018945A /* ThreeDTouchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ThreeDTouchView.xib; path = iOS9/ThreeDTouch/ThreeDTouchView.xib; sourceTree = "<group>"; };
 		74F1FF831BBB74DC0018945A /* XibViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibViewController.swift; path = Common/ViewControllers/XibViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74A10A5A1BB4F2B3002E1BE4 /* LocalAuthentication.framework in Frameworks */,
+				7493C9381BC82F53006222EE /* GSFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,15 +78,6 @@
 			name = ScrollingView;
 			sourceTree = "<group>";
 		};
-		7441F2EF1BB57C1F00E95D95 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				7441F2F01BB57C4E00E95D95 /* SystemUtils.swift */,
-				74F1FF7C1BBAB8820018945A /* ImageUtils.swift */,
-			);
-			name = Utils;
-			sourceTree = "<group>";
-		};
 		7441F2FD1BB9DC8400E95D95 /* AnimatedModalOverlay */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +89,19 @@
 			name = AnimatedModalOverlay;
 			sourceTree = "<group>";
 		};
+		7493C9121BC713D3006222EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7493C9371BC82F53006222EE /* GSFramework.framework */,
+				74A10A591BB4F2B3002E1BE4 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		74A0AD511BB40AD400E10B35 = {
 			isa = PBXGroup;
 			children = (
-				74A10A591BB4F2B3002E1BE4 /* LocalAuthentication.framework */,
+				7493C9121BC713D3006222EE /* Frameworks */,
 				74A0AD5C1BB40AD400E10B35 /* iOS Playground */,
 				74A0AD5B1BB40AD400E10B35 /* Products */,
 			);
@@ -119,7 +118,6 @@
 		74A0AD5C1BB40AD400E10B35 /* iOS Playground */ = {
 			isa = PBXGroup;
 			children = (
-				7441F2EF1BB57C1F00E95D95 /* Utils */,
 				74A0AD711BB4E17500E10B35 /* iOS9 */,
 				74A0AD5D1BB40AD400E10B35 /* AppDelegate.swift */,
 				74A0AD5F1BB40AD400E10B35 /* MainMenuViewController.swift */,
@@ -191,6 +189,7 @@
 				74A0AD571BB40AD400E10B35 /* Frameworks */,
 				7493C9111BC6EABB006222EE /* Swift Lint */,
 				74A0AD581BB40AD400E10B35 /* Resources */,
+				7493C9391BC82FAF006222EE /* Embed Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,6 +267,21 @@
 			shellPath = /bin/sh;
 			shellScript = /usr/local/bin/swiftlint;
 		};
+		7493C9391BC82FAF006222EE /* Embed Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/GSFramework.framework",
+			);
+			name = "Embed Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -281,11 +295,9 @@
 				74A0AD741BB4E1D100E10B35 /* TouchIDViewController.swift in Sources */,
 				7441F2FC1BB9DB4400E95D95 /* AnimatedModalOverlayViewController.swift in Sources */,
 				74A0AD601BB40AD400E10B35 /* MainMenuViewController.swift in Sources */,
-				7441F2F11BB57C4E00E95D95 /* SystemUtils.swift in Sources */,
 				74213FF31BC4679200680D1B /* ScrollingViewController.swift in Sources */,
 				74A0AD5E1BB40AD400E10B35 /* AppDelegate.swift in Sources */,
 				74F1FF7F1BBB204E0018945A /* ThreeDTouchViewController.swift in Sources */,
-				74F1FF7D1BBAB8820018945A /* ImageUtils.swift in Sources */,
 				7493C90E1BC61568006222EE /* PeekViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +415,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_PEDANTIC = YES;
@@ -424,6 +437,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_PEDANTIC = YES;

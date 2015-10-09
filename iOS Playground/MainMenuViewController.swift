@@ -7,17 +7,18 @@
 //
 
 import UIKit
+import GSFramework
 
 class MainMenuViewController: UITableViewController{
 
     let playgroundItems: [PlaygroundItem] = [
         PlaygroundItem(name: "Touch ID", searchKeywords:["Touch ID", "iOS SDK", "UIKit"], sortIndex: 0, iconAssetName: "TouchID", caption: "Last modified: 9/25/2015", viewControllerClass:TouchIDViewController.self, isEnabledCheck: {
-            let isEnabled = SystemUtils.getOSVersion().isEqualToOrGreaterThan(OSVersion(major:8, minor:0)) && SystemUtils.isTouchIDAvailable()
+            let isEnabled = OS.getOSVersion() >= "8.0" && OS.isTouchIDAvailable()
             return isEnabled
         }),
         PlaygroundItem(name: "Animated Modal Overlay", searchKeywords:["Animated Modal Overlay", "Dialog", "iOS SDK", "UIKit"], sortIndex: 0, iconAssetName: "AnimatedModalDialog",caption: "Last modified: 9/28/2015", viewControllerClass:AnimatedModalOverlayViewController.self, isEnabledCheck: nil),
         PlaygroundItem(name: "3D Touch", searchKeywords:["3DTouch", "Force Touch", "iOS SDK", "UIKit"], sortIndex: 0, iconAssetName: "3DTouch", caption: "Last modified: 9/29/2015", viewControllerClass:ThreeDTouchViewController.self, isEnabledCheck: {
-            let isEnabled = SystemUtils.getOSVersion().isEqualToOrGreaterThan(OSVersion(major:9, minor:0)) && SystemUtils.is3DTouchAvailable()
+            let isEnabled = OS.getOSVersion() >= "9.0" && OS.is3DTouchAvailable()
             return isEnabled
         }),
         PlaygroundItem(name: "ScrollView", searchKeywords:["UIScrollView", "Scrolling", "iOS SDK", "UIKit"], sortIndex: 0, iconAssetName: "ScrollView", caption: "Last modified: 10/06/2015", viewControllerClass:ScrollingViewController.self, isEnabledCheck: nil),
